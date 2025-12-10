@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Muse | Premium Home Décor Consultancy USA | Interior Design Experts</title>
+    <meta name="description" content="Zen Muse offers premium home décor consultancy across the USA. Transform your space with our expert interior designers using sophisticated graphite black, ice white, and steel accents.">
+    <meta name="keywords" content="home décor, interior design, USA home consultancy, Zen Muse, interior styling, home transformation, modern design">
+    <meta name="author" content="Zen Muse">
+    <meta property="og:title" content="Zen Muse | Premium Home Décor Consultancy USA">
+    <meta property="og:description" content="Transform your space with expert interior design consultancy across the USA">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://zenmuse.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/000000/interior-design.png">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --graphite-black: #1a1a1a;
+            --graphite-black-light: #2d2d2d;
+            --ice-white: #f8f9fa;
+            --ice-white-warm: #f5f3f0;
+            --steel: #6c757d;
+            --steel-light: #a0a9b1;
+            --steel-dark: #495057;
+            --accent-steel: #8a9ba8;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--graphite-black-light);
+            background-color: var(--ice-white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--graphite-black);
+            line-height: 1.3;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: rgba(26, 26, 26, 0.95);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(108, 117, 125, 0.2);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo-icon {
+            color: var(--steel-light);
+            font-size: 28px;
+        }
+        
+        .logo h1 {
+            color: var(--ice-white);
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--steel-light);
+            font-weight: 300;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--ice-white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: var(--transition);
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--steel-light);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--steel-light);
+            bottom: 0;
+            left: 0;
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--ice-white);
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        /* Hero Banner */
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.8)),
+                url('https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            color: var(--ice-white);
+            margin-top: 70px;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h2 {
+            font-size: 3.8rem;
+            margin-bottom: 20px;
+            color: var(--ice-white);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            color: var(--steel-light);
+            max-width: 600px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--ice-white);
+            border: 2px solid var(--steel-light);
+            padding: 14px 35px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--steel-light);
+            color: var(--graphite-black);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* About Us */
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.8rem;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 3px;
+            background-color: var(--steel);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--graphite-black-light);
+        }
+        
+        .about-image {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(108, 117, 125, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Services */
+        .services {
+            background-color: var(--ice-white-warm);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background-color: var(--ice-white);
+            padding: 45px 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            text-align: center;
+            border: 1px solid rgba(108, 117, 125, 0.1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: var(--steel-light);
+        }
+        
+        .service-icon {
+            font-size: 2.8rem;
+            color: var(--steel);
+            margin-bottom: 25px;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-icon {
+            color: var(--steel-dark);
+            transform: scale(1.1);
+        }
+        
+        .service-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-card p {
+            color: var(--steel-dark);
+            line-height: 1.7;
+        }
+        
+        /* Portfolio */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            height: 320px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(26, 26, 26, 0.95));
+            padding: 25px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0);
+        }
+        
+        .portfolio-overlay h3 {
+            color: var(--ice-white);
+            margin-bottom: 8px;
+            font-size: 1.4rem;
+        }
+        
+        .portfolio-overlay p {
+            color: var(--steel-light);
+            font-size: 0.95rem;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-content img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--ice-white);
+            font-size: 40px;
+            cursor: pointer;
+            transition: var(--transition);
+            line-height: 1;
+        }
+        
+        .lightbox-close:hover {
+            color: var(--steel-light);
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--ice-white);
+            font-size: 40px;
+            cursor: pointer;
+            transition: var(--transition);
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        
+        .lightbox-prev {
+            left: 20px;
+        }
+        
+        .lightbox-next {
+            right: 20px;
+        }
+        
+        .lightbox-nav:hover {
+            color: var(--steel-light);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .lightbox-caption {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            color: var(--ice-white);
+            text-align: center;
+            padding: 10px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--graphite-black);
+            color: var(--ice-white);
+        }
+        
+        .testimonials .section-title h2 {
+            color: var(--ice-white);
+        }
+        
+        .testimonials-slider {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+        
+        .testimonial-slide {
+            display: none;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid rgba(108, 117, 125, 0.2);
+        }
+        
+        .testimonial-slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .testimonial-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 30px;
+            line-height: 1.8;
+            color: var(--ice-white);
+        }
+        
+        .client-info h4 {
+            color: var(--steel-light);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+        
+        .client-info p {
+            color: var(--steel);
+            font-size: 1rem;
+        }
+        
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        
+        .dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--steel);
+            border-radius: 50%;
+            margin: 0 8px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .dot.active {
+            background-color: var(--ice-white);
+            transform: scale(1.2);
+        }
+        
+        /* Contact */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        
+        .contact-form h3, .contact-info h3 {
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: var(--graphite-black);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 15px 18px;
+            border: 1px solid var(--steel);
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background-color: var(--ice-white);
+            color: var(--graphite-black);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--graphite-black);
+            box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+        }
+        
+        .submit-btn {
+            background-color: var(--graphite-black);
+            color: var(--ice-white);
+            border: none;
+            padding: 16px 35px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--steel-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container {
+            margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(108, 117, 125, 0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--graphite-black);
+            color: var(--ice-white);
+            padding: 80px 0 25px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            color: var(--ice-white);
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--steel);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-column p, .footer-column a {
+            color: var(--steel-light);
+            margin-bottom: 15px;
+            display: block;
+            text-decoration: none;
+            transition: var(--transition);
+            line-height: 1.7;
+        }
+        
+        .footer-column a:hover {
+            color: var(--ice-white);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 25px;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--steel);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--steel);
+            font-size: 0.95rem;
+        }
+        
+        /* Policy Pages */
+        .policy-container {
+            max-width: 900px;
+            margin: 120px auto 70px;
+            padding: 50px;
+            background-color: var(--ice-white);
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(108, 117, 125, 0.1);
+        }
+        
+        .policy-container h1 {
+            font-size: 2.8rem;
+            margin-bottom: 40px;
+            color: var(--graphite-black);
+            text-align: center;
+        }
+        
+        .policy-container h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            color: var(--graphite-black);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(108, 117, 125, 0.2);
+        }
+        
+        .policy-container h3 {
+            font-size: 1.4rem;
+            margin: 30px 0 15px;
+            color: var(--graphite-black);
+        }
+        
+        .policy-container p, .policy-container li {
+            margin-bottom: 18px;
+            line-height: 1.8;
+            color: var(--graphite-black-light);
+        }
+        
+        .policy-container ul {
+            margin-left: 25px;
+            margin-bottom: 25px;
+        }
+        
+        .policy-container ul li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        
+        .policy-container ul li:before {
+            content: "•";
+            color: var(--steel);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .back-to-home {
+            display: inline-block;
+            margin-top: 40px;
+            color: var(--steel);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            font-size: 1.1rem;
+        }
+        
+        .back-to-home:hover {
+            color: var(--graphite-black);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1100px) {
+            .hero h2 {
+                font-size: 3.2rem;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .about-content, .contact-container {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            
+            .hero h2 {
+                font-size: 2.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2.4rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background-color: var(--graphite-black);
+                flex-direction: column;
+                padding: 100px 0 0;
+                text-align: center;
+                z-index: 999;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 0;
+                padding: 15px 0;
+            }
+            
+            nav ul li a {
+                font-size: 1.2rem;
+                padding: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h2 {
+                font-size: 2.4rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section {
+                padding: 80px 0;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .policy-container {
+                margin: 100px 20px 50px;
+                padding: 30px 25px;
+            }
+            
+            .policy-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .testimonial-slide {
+                padding: 30px 20px;
+            }
+            
+            .testimonial-text {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h1>Zen<span>Muse</span></h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transform Your Space with Zen Muse</h2>
+                <p>Elevate your home décor with our expert interior design consultancy services across the USA. We blend graphite black, ice white, and steel accents to create harmonious, sophisticated living spaces that reflect your unique style.</p>
+                <a href="#contact" class="cta-button">Schedule Your Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded with a vision to transform American homes into sanctuaries of style and comfort, Zen Muse brings over a decade of expertise in home décor consultancy. Our team of certified interior designers specializes in creating spaces that balance aesthetic appeal with functional living, serving clients across all 50 states.</p>
+                    <p>We believe that your home should be a reflection of your personality while providing a tranquil retreat from the outside world. Our signature approach combines the timeless elegance of graphite black and ice white with contemporary steel accents, creating interiors that are both sophisticated and welcoming.</p>
+                    <p>Whether you're refreshing a single room or undertaking a complete home transformation, Zen Muse provides the guidance, resources, and creative vision to bring your dream space to life. Our philosophy centers on creating harmonious environments that promote wellbeing through thoughtful design, quality materials, and personalized attention to detail.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=958&q=80" alt="Zen Muse interior design team collaborating in a modern studio" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Full Home Design</h3>
+                    <p>Comprehensive interior design services for your entire home, creating cohesive spaces that flow seamlessly from room to room with our signature color palette.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Room Transformation</h3>
+                    <p>Focused redesign of specific rooms like living rooms, bedrooms, or kitchens to maximize both function and style using graphite black and steel accents.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Color Consultation</h3>
+                    <p>Expert guidance on color schemes, including our signature graphite black, ice white, and steel accent combinations tailored to your space and lighting.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Furniture Sourcing</h3>
+                    <p>Curated selection and procurement of furniture pieces that align with your design vision, budget, and our sophisticated aesthetic principles.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Lighting Design</h3>
+                    <p>Strategic lighting plans that enhance ambiance, functionality, and highlight key design elements in your space with custom steel fixtures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Virtual Consultations</h3>
+                    <p>Remote design services accessible anywhere in the USA, complete with digital mockups, 3D renderings, and personalized shopping lists.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Portfolio</h2>
+            </div>
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <span class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</span>
+        <span class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</span>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="" loading="lazy">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div id="testimonialsContainer">
+                    <!-- Testimonials will be populated by JavaScript -->
+                </div>
+                <div class="testimonial-dots" id="testimonialDots">
+                    <!-- Dots will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State *</label>
+                            <select id="state" name="state" required>
+                                <option value="">Select your state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="CA">California</option>
+                                <option value="NY">New York</option>
+                                <option value="TX">Texas</option>
+                                <option value="FL">Florida</option>
+                                <option value="IL">Illinois</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="full-home">Full Home Design</option>
+                                <option value="room-transformation">Room Transformation</option>
+                                <option value="color-consultation">Color Consultation</option>
+                                <option value="furniture-sourcing">Furniture Sourcing</option>
+                                <option value="lighting-design">Lighting Design</option>
+                                <option value="virtual-consultation">Virtual Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Our Information</h3>
+                    <p><strong>Email:</strong> info@zenmuse.com</p>
+                    <p><strong>Phone:</strong> (555) 123-ZEN1 (9361)</p>
+                    <p><strong>Address:</strong> 123 Design Avenue, Suite 500, New York, NY 10001</p>
+                    <p><strong>Service Areas:</strong> All 50 US States - Virtual & In-Person Consultations</p>
+                    <p><strong>Hours:</strong> Monday-Friday: 9am-6pm EST</p>
+                    
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.183948025374!2d-73.99834502387476!3d40.75873937138782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square%2C%20New%20York%2C%20NY%2010036%2C%20USA!5e0!3m2!1sen!2s!4v1689972438815!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Zen Muse Location Map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Zen Muse</h3>
+                    <p>Transforming homes across the USA with sophisticated design concepts featuring graphite black, ice white, and steel accents. Creating harmonious living spaces since 2012.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Houzz"><i class="fab fa-houzz"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <a href="#services">Full Home Design</a>
+                    <a href="#services">Room Transformation</a>
+                    <a href="#services">Color Consultation</a>
+                    <a href="#services">Furniture Sourcing</a>
+                    <a href="#services">Lighting Design</a>
+                    <a href="#services">Virtual Consultations</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-conditions.html">Terms & Conditions</a>
+                    <a href="refund-policy.html">Refund Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Zen Muse Home Décor Consultancy. All rights reserved. | Serving clients across all 50 US states</p>
+                <p style="margin-top: 10px; font-size: 0.85rem;">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" style="color: var(--steel-light);">Privacy Policy</a> and <a href="https://policies.google.com/terms" style="color: var(--steel-light);">Terms of Service</a> apply.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.getElementById('navMenu').classList.toggle('active');
+            this.innerHTML = document.getElementById('navMenu').classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navMenu').classList.remove('active');
+                document.getElementById('mobileMenuBtn').innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Portfolio Data
+        const portfolioItems = [
+            {
+                id: 1,
+                name: "Manhattan Loft Transformation",
+                description: "Industrial chic living space with steel accents and graphite black feature wall",
+                image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 2,
+                name: "California Minimalist Kitchen",
+                description: "Ice white kitchen with graphite black fixtures and steel hardware",
+                image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 3,
+                name: "Chicago Townhouse Living Room",
+                description: "Harmonious blend of modern and traditional elements with steel light fixtures",
+                image: "https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 4,
+                name: "Miami Beach Residence",
+                description: "Coastal aesthetic with sophisticated steel details and ice white palette",
+                image: "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 5,
+                name: "Seattle Urban Oasis Bedroom",
+                description: "Graphite black feature wall in a serene bedroom with steel bedside lamps",
+                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 6,
+                name: "Austin Modern Farmhouse",
+                description: "Steel light fixtures in a contemporary dining area with ice white walls",
+                image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 7,
+                name: "Boston Heritage Home Office",
+                description: "Restored historical property with modern touches and graphite black desk",
+                image: "https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            },
+            {
+                id: 8,
+                name: "Portland Zen Studio",
+                description: "Meditation space with minimalist design and steel accent pieces",
+                image: "https://images.unsplash.com/photo-1616594039964-ae902f657c0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+            }
+        ];
+
+        // Testimonials Data
+        const testimonials = [
+            {
+                id: 1,
+                text: "Zen Muse transformed our cramped apartment into a spacious-feeling sanctuary. Their use of ice white with steel accents made our small New York space feel open and luxurious. The virtual consultation process was seamless!",
+                name: "Sarah Johnson",
+                location: "New York, NY"
+            },
+            {
+                id: 2,
+                text: "The virtual consultation service was perfect for our remote home in Montana. The digital mockups were incredibly accurate and the shopping list made implementation effortless. We saved thousands by avoiding design mistakes.",
+                name: "Michael Chen",
+                location: "Bozeman, MT"
+            },
+            {
+                id: 3,
+                text: "Working with Zen Muse was worth every penny. They understood our vision for a graphite black and steel industrial kitchen and executed it flawlessly. Our Chicago home has become the talk of the neighborhood!",
+                name: "David & Elena Rodriguez",
+                location: "Chicago, IL"
+            },
+            {
+                id: 4,
+                text: "Their color consultation service helped us choose the perfect shades for our entire Seattle home. The graphite black accent wall in our living room is now the focal point everyone compliments. Professional from start to finish.",
+                name: "Jennifer Park",
+                location: "Seattle, WA"
+            },
+            {
+                id: 5,
+                text: "As someone who was overwhelmed by design choices, Zen Muse provided the guidance I needed. My Austin bedroom transformation is now my favorite retreat after long days. The steel lighting fixtures are stunning.",
+                name: "Robert Williams",
+                location: "Austin, TX"
+            },
+            {
+                id: 6,
+                text: "The furniture sourcing service saved us countless hours. Every piece they selected for our Miami home fits our space perfectly and aligns with our aesthetic. Highly recommended for busy professionals!",
+                name: "Amanda Stevens",
+                location: "Miami, FL"
+            }
+        ];
+
+        // Initialize Portfolio
+        const portfolioGrid = document.getElementById('portfolioGrid');
+        
+        portfolioItems.forEach(item => {
+            const portfolioItem = document.createElement('div');
+            portfolioItem.className = 'portfolio-item';
+            portfolioItem.dataset.id = item.id;
+            
+            portfolioItem.innerHTML = `
+                <img src="${item.image}" alt="${item.name} - ${item.description}" loading="lazy">
+                <div class="portfolio-overlay">
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                </div>
+            `;
+            
+            portfolioGrid.appendChild(portfolioItem);
+        });
+
+        // Initialize Testimonials
+        const testimonialsContainer = document.getElementById('testimonialsContainer');
+        const testimonialDots = document.getElementById('testimonialDots');
+        
+        testimonials.forEach((testimonial, index) => {
+            // Create testimonial slides
+            const slide = document.createElement('div');
+            slide.className = `testimonial-slide ${index === 0 ? 'active' : ''}`;
+            slide.dataset.id = testimonial.id;
+            
+            slide.innerHTML = `
+                <div class="testimonial-text">"${testimonial.text}"</div>
+                <div class="client-info">
+                    <h4>${testimonial.name}</h4>
+                    <p>${testimonial.location}</p>
+                </div>
+            `;
+            
+            testimonialsContainer.appendChild(slide);
+            
+            // Create dots
+            const dot = document.createElement('div');
+            dot.className = `dot ${index === 0 ? 'active' : ''}`;
+            dot.dataset.index = index;
+            testimonialDots.appendChild(dot);
+        });
+
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxCaption = document.getElementById('lightboxCaption');
+        const lightboxClose = document.getElementById('lightboxClose');
+        const lightboxPrev = document.getElementById('lightboxPrev');
+        const lightboxNext = document.getElementById('lightboxNext');
+        
+        let currentImageIndex = 0;
+        
+        // Open lightbox when portfolio item is clicked
+        document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                updateLightbox();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Update lightbox content
+        function updateLightbox() {
+            const item = portfolioItems[currentImageIndex];
+            lightboxImage.src = item.image;
+            lightboxImage.alt = `${item.name} - ${item.description}`;
+            lightboxCaption.textContent = `${item.name}: ${item.description}`;
+        }
+        
+        // Close lightbox
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+        
+        // Previous image
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + portfolioItems.length) % portfolioItems.length;
+            updateLightbox();
+        });
+        
+        // Next image
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % portfolioItems.length;
+            updateLightbox();
+        });
+        
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + portfolioItems.length) % portfolioItems.length;
+                    updateLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % portfolioItems.length;
+                    updateLightbox();
+                }
+            }
+        });
+        
+        // Testimonial slider functionality
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+        let currentTestimonial = 0;
+        
+        // Function to show a specific testimonial
+        function showTestimonial(index) {
+            testimonialSlides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonialSlides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        // Add click event to dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showTestimonial(index);
+            });
+        });
+        
+        // Auto-rotate testimonials
+        let testimonialInterval = setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 6000);
+        
+        // Pause auto-rotation on hover
+        testimonialsContainer.addEventListener('mouseenter', () => {
+            clearInterval(testimonialInterval);
+        });
+        
+        testimonialsContainer.addEventListener('mouseleave', () => {
+            testimonialInterval = setInterval(() => {
+                currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+                showTestimonial(currentTestimonial);
+            }, 6000);
+        });
+        
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const state = document.getElementById('state').value;
+            const message = document.getElementById('message').value;
+            
+            if (!name || !email || !state || !message) {
+                alert('Please fill in all required fields marked with *');
+                return;
+            }
+            
+            // In a real implementation, you would send this data to a server
+            const formData = {
+                name: name,
+                email: email,
+                phone: document.getElementById('phone').value,
+                state: state,
+                service: document.getElementById('service').value,
+                message: message,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Simulate form submission
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert(`Thank you, ${formData.name}! Your consultation request has been received. We'll contact you within 24 hours to schedule your design consultation.`);
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Add active class to nav links on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#navMenu a[href^="#"]');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+        
+        // Performance optimization - Defer non-critical CSS
+        window.addEventListener('load', function() {
+            // Set a timeout to simulate deferred loading
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 300);
+        });
+    </script>
+</body>
+</html>
